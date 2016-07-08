@@ -44,6 +44,7 @@
 .home1 img {
 	filter: opacity(90%);
 	width: 100%;
+	padding: -10px;
 }
 
 .home2, .home3, .home4, .home5 {
