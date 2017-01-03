@@ -1,27 +1,42 @@
 .nav {
-	direction: rtl;
-	position: fixed;
-	top: 0;
-	right: 0;
-	width: 100%;
-	height: 55px;
-	background-color: rgba(1,1,1,0.8);
-	z-index: 1;
+	list-style: none;
+  	margin: 0;
+  	background-color: rgba(1,1,1,0.9);
+  	display: flex;
+	-webkit-flex-flow: row wrap;
+	justify-content: flex-end;
 }
 
-.nav ul li {
-	display: inline;
-	padding: 10px;
+.nav a {
+	text-decoration: none;
+	display: block;
+	padding: 1em;
+	color: white;
 }
 
-.nav a, .homeCenter a {
+.nav1 {
+	list-style: none;
+  	margin: 0;
+  	display: flex;
+	-webkit-flex-flow: row wrap;
+	justify-content: center;
+}
+
+.nav1 a {
+	text-decoration: none;
+	display: block;
+	padding: 1em;
+	color: #333;
+}
+
+.homeCenter a {
 	color: white;
 	text-decoration: none;
 	transition: all ease-in-out 2s;
 }
 
-.nav a:hover {
-	border-bottom: 1px solid white; 	
+.nav a:hover, .nav1 a:hover, .homeCenter h5 a:hover {
+	text-decoration: underline;	
 }
 
 .homeCenter {
@@ -31,14 +46,11 @@
 	height: 200px;
 	width: 350px;
 	margin-left: -175px;
-	margin-top: -100px;
+	margin-top: -110px;
     text-align: center;
     color: #fff;
+    font-size: 19px;
     font-family: 'Titillium Web', sans-serif;
-}
-
-.homeCenter h1 {
-	font-size: 45px;
 }
 
 .home1 img {
@@ -52,6 +64,10 @@
 	text-align: center;
 }
 
+.card p {
+	font-size: 19px;
+}
+
 .home2, .home4 {
 	background-color: #eee;
 }
@@ -59,8 +75,10 @@
 .home2 p, .home3 p, .home5 p {
 	color: #999;
 	font-size: 19px;
-	width: 70%;
-	margin-left: 150px;
+}
+
+.home2 p, .home3 p {
+	padding: 20px;
 }
 
 .card {
@@ -80,10 +98,16 @@
 	padding: 100px;
 }
 
+.project-list {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+}
+
 .project {
 	height: 250px;
 	width: 300px;
-	margin: 50px;
+	margin: 30px;
 	display: inline-block;
 	position: relative;
 }
@@ -228,7 +252,6 @@ time {
   transform: translate3d(300px, 0, 0);
 }
 
-
 .timeline ul li:nth-child(3) div,.timeline ul li:nth-child(7) div,.timeline ul li:nth-child(11) div {
   transform: translate3d(-300px, 0, 0);
 }
@@ -239,39 +262,38 @@ time {
   opacity: 1;
 }
 
-.download {
-	width: 200px;
-	height: 30px;
-	margin: 2% 0 0 40%;
-	padding: 5px;
-	border: 2px solid #999;
-	border-radius: 5px;
-	font-size: 17px;
-	background-color: #333;
-	color: #eee;
-	cursor: pointer;
+.home5 h2 {
+	text-decoration: underline;
 }
 
 .home5 img {
 	max-height: 150px;
 	max-width: 150px;
-	margin-top: 3%;
+	margin-top: 30px;
 }
 
 .home6 h3 {
 	text-align: center;
 }
 
-.home6 .about, .home6 .contact {
-	width: 50%;
-	height: 100%;
-	float: left;
-	color: #333;
+.home6 {
+	padding: 0;
+	margin: 0;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
 }
 
 .home6 p {
-	width: 50%;
-	margin-left: 150px;
+	width: 300px;
+	margin-left: 20px;
+}
+
+.about, .contact {
+	width: 300px;
+	padding: 10px;
+	color: #333;
+	text-align: left;
 }
 
 .home6 h3, footer {
@@ -280,26 +302,79 @@ time {
 	font-size: 15px;
 }
 
-
-footer {
+footer h5 {
 	text-align: center;
-	margin: 100px;
 }
 
-footer ul li {
-	direction: rtl;
-	list-style: none;
-	display: inline;
-	padding: 10px;
+@media all and (max-width: 800px) {
+  .nav, .nav1 {
+    justify-content: space-around;
+  }
 }
 
-footer ul li a {
-	text-decoration: none;
-	color: #333;
-	transition: all ease-in-out 2s;
+@media all and (max-width: 900px) {
+	.timeline ul li div {
+		width: 200px;
+	}
+
+	.timeline ul li:nth-child(3) div,.timeline ul li:nth-child(7) div,.timeline ul li:nth-child(11) div {
+	  left: -270px;
+	}
 }
 
-footer ul li a:hover {
-	border-bottom: 1px solid #333;
-}
+@media all and (max-width: 600px) {
+  .nav, .nav1 {
+    flex-flow: column wrap;
+    padding: 0;
+  }
+  
+  .nav a, .nav1 a { 
+    text-align: center; 
+    padding: 9px;
+  }
 
+  .homeCenter {
+	padding-top: 30px;
+  }
+
+  .nav a {
+	border-top: 1px solid rgba(255,255,255,0.2); 
+    border-bottom: 1px solid rgba(0,0,0,0.1); 
+  }
+
+  .nav li:last-of-type a {
+    border-bottom: none;
+  }
+
+  .card h3 {
+  	font-size: 20px;
+  }
+
+  .card p {
+  	font-size: 15px;
+  }
+
+  .timeline ul li {
+  	margin-left: 70px;
+  }
+
+  .timeline ul li div {
+	width: 200px;
+  }
+
+  .timeline ul li:nth-child(3) div,.timeline ul li:nth-child(7) div,.timeline ul li:nth-child(11) div {
+	left: 45px;
+  }
+
+  .timeline ul li:nth-child(3) div::before,.timeline ul li:nth-child(7) div::before ,.timeline ul li:nth-child(11) div::before {
+  	left: -15px;
+  	border-width: 8px 16px 8px 0;
+  	border-color: transparent #fff transparent transparent;
+  }
+
+  .icon {
+  	position: absolute;
+  	z-index: 2;
+  	margin-left: -235px;
+  }
+}
