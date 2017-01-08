@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Hema's Portfolio</title>
-	<link rel="stylesheet" href="app.css">
+	<link rel="stylesheet" href="css/app.css">
 	<link href='https://fonts.googleapis.com/css?family=Titillium+Web' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -13,7 +13,7 @@
 </head>
 <body>
 <!-- Home page -->
-<div>
+<header>
 	<ul class="nav">
 		<li><a href="#home2">Expertise</a></li>
 		<li><a href="#home3">Projects</a></li>
@@ -21,7 +21,7 @@
 		<li><a href="#home5">Resume</a></li>
 		<li><a href="#home6">Contact</a></li>
 	</ul>
-</div>
+</header>
 <section id="home1" class="home1">
 	<img src="images/home.jpg"/>
 	<div class="homeCenter">
@@ -56,47 +56,53 @@
 </section>
 <section id="home3" class="home3">
 	<h1>Projects<h1>
-	<p>I had done some projects to get a practice right after learned the new stuff</p>
+	<p>I have done some projects to get a practice right after I learned the new stuff</p>
 	<ul class="project-list">
 	<li>
-		<a class="project" href="http://codepen.io/Hemalatah/pen/RWeawp">
-			<img src="images/project1.png"/>
+		<a class="project" href="https://eventplannerapp-31b83.firebaseapp.com">
+			<img src="images/project1.png" sizes="(max-width: 40em) 100vw, 50vw" srcset="images/project1.png 200w, images/project1.png 400w, images/project1.png 600w">
 			<span class="text"><i>Open Project</i></span>
 		</a>
 	</li>
 	<li>
 		<a class="project" href="http://codepen.io/Hemalatah/pen/GpXNZQ">
-			<img src="images/project2.png"/>
+			<img src="images/project2.png" sizes="(max-width: 40em) 100vw, 50vw" srcset="images/project2.png 200w, images/project2.png 400w, images/project2.png 600w">
 			<span class="text"><i>Open Project</i></span>
 		</a>
 	</li>
 	<li>
 		<a class="project" href="http://codepen.io/Hemalatah/pen/XXKmQO">
-			<img src="images/project3.png"/>
+			<img src="images/project3.png" sizes="(max-width: 40em) 100vw, 50vw" srcset="images/project3.png 200w, images/project3.png 400w, images/project3.png 600w">
 			<span class="text"><i>Open Project</i></span>
 		</a>
 	</li>
 	<li>
 		<a class="project" href="http://codepen.io/Hemalatah/pen/MKYxLa">
-			<img src="images/project4.png"/>
+			<img src="images/project4.png" sizes="(max-width: 40em) 100vw, 50vw" srcset="images/project4.png 200w, images/project4.png 400w, images/project4.png 600w">
 			<span class="text"><i>Open Project</i></span>
 		</a>
 	</li>
 	<li>
 		<a class="project" href="http://codepen.io/Hemalatah/pen/xwJLeO">
-			<img src="images/project5.png"/>
+			<img src="images/project5.png" sizes="(max-width: 40em) 100vw, 50vw" srcset="images/project5.png 200w, images/project5.png 400w, images/project5.png 600w">
 			<span class="text"><i>Open Project</i></span>
 		</a>
 	</li>
 	<li>
 		<a class="project" href="http://codepen.io/Hemalatah/pen/pjmQvP">
-			<img src="images/project6.png"/>
+			<img src="images/project6.png" sizes="(max-width: 40em) 100vw, 50vw" srcset="images/project6.png 200w, images/project6.png 400w, images/project6.png 600w">
 			<span class="text"><i>Open Project</i></span>
 		</a>
 	</li>
 	<li>
 		<a class="project" href="http://codepen.io/Hemalatah/pen/VePJEd">
-			<img src="images/project7.png"/>
+			<img src="images/project7.png" sizes="(max-width: 40em) 100vw, 50vw" srcset="images/project7.png 200w, images/project7.png 400w, images/project7.png 600w">
+			<span class="text"><i>Open Project</i></span>
+		</a>
+	</li>
+	<li>
+		<a class="project" href="http://codepen.io/Hemalatah/pen/RWeawp">
+			<img src="images/project8.png" sizes="(max-width: 40em) 100vw, 50vw" srcset="images/project8.png 200w, images/project8.png 400w, images/project8.png 600w">
 			<span class="text"><i>Open Project</i></span>
 		</a>
 	</li>
@@ -186,63 +192,7 @@
 		<li><a href="#home4">Timeline</a></li>
 		<li><a href="#home5">Resume</a></li>
 </footer>
-<script>
-
-	/* smooth scrolling effect */
-
-	$(document).ready(function(){
-
-		$('a[href^="#"]').on('click',function (e) {
-		    e.preventDefault();
-
-		    var target = this.hash;
-		    var $target = $(target);
-
-		    $('html, body').stop().animate({
-		        'scrollTop': $target.offset().top
-		    }, 900, 'swing', function () {
-		        window.location.hash = target;
-		    });
-		});
-
-		(function() {
-
-		  'use strict';
-
-		  // define variables
-		  var items = document.querySelectorAll(".timeline li");
-
-		  // check if an element is in viewport
-		  
-		  function isElementInViewport(el) {
-		    var rect = el.getBoundingClientRect();
-		    return (
-		      rect.top >= 0 &&
-		      rect.left >= 0 &&
-		      rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-		      rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-		    );
-		  }
-
-		  function callbackFunc() {
-		    for (var i = 0; i < items.length; i++) {
-		      if (isElementInViewport(items[i])) {
-		        items[i].classList.add("in-view");
-		      }
-		    }
-		  }
-
-		  // listen for events
-		  window.addEventListener("load", callbackFunc);
-		  window.addEventListener("resize", callbackFunc);
-		  window.addEventListener("scroll", callbackFunc);
-
-		})();
-	})
-
-	/* Timeline Effets */
-
-	
-</script>
+<script type="text/javascript" src="js/app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/3.6.4/firebase.js"></script>
 </body>
 </html>                                          
