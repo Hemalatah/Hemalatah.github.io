@@ -35,7 +35,9 @@
 	transition: all ease-in-out 2s;
 }
 
-.nav a:hover, .nav1 a:hover, .homeCenter h5 a:hover {
+.nav a:hover,
+.nav1 a:hover,
+.homeCenter h5 a:hover {
 	text-decoration: underline;	
 }
 
@@ -59,7 +61,10 @@
 	padding: -10px;
 }
 
-.home2, .home3, .home4, .home5 {
+.home2,
+.home3,
+.home4,
+.home5 {
 	font-family: 'Titillium Web', sans-serif;
 	text-align: center;
 }
@@ -68,16 +73,20 @@
 	font-size: 19px;
 }
 
-.home2, .home4 {
+.home2,
+.home4 {
 	background-color: #eee;
 }
 
-.home2 p, .home3 p, .home5 p {
+.home2 p,
+.home3 p,
+.home5 p {
 	color: #999;
 	font-size: 19px;
 }
 
-.home2 p, .home3 p {
+.home2 p,
+.home3 p {
 	padding: 20px;
 }
 
@@ -94,7 +103,9 @@
     box-shadow: 4px 8px 16px 4px rgba(0,0,0,0.5);
 }
 
-.home2, .home5, .home6 {
+.home2,
+.home5,
+.home6 {
 	padding: 100px;
 }
 
@@ -157,7 +168,10 @@ span.text {
 	opacity: 1;	
 }
 
-.timeline, .timeline ul, .home2, .home3 {
+.timeline,
+.timeline ul,
+.home2,
+.home3 {
   padding: 50px 0;
 }
 
@@ -207,21 +221,31 @@ span.text {
   border-style: solid;
 }
 
-.timeline ul li:nth-child(1) div,.timeline ul li:nth-child(5) div,.timeline ul li:nth-child(9) div,.timeline ul li:nth-child(13) div {
+.timeline ul li:nth-child(1) div,
+.timeline ul li:nth-child(5) div,
+.timeline ul li:nth-child(9) div,
+.timeline ul li:nth-child(13) div {
   left: 45px;
 }
 
-.timeline ul li:nth-child(1) div::before,.timeline ul li:nth-child(5) div::before ,.timeline ul li:nth-child(9) div::before,.timeline ul li:nth-child(13) div::before   {
+.timeline ul li:nth-child(1) div::before,
+.timeline ul li:nth-child(5) div::before,
+.timeline ul li:nth-child(9) div::before,
+.timeline ul li:nth-child(13) div::before {
   left: -15px;
   border-width: 8px 16px 8px 0;
   border-color: transparent #fff transparent transparent;
 }
 
-.timeline ul li:nth-child(3) div,.timeline ul li:nth-child(7) div,.timeline ul li:nth-child(11) div {
+.timeline ul li:nth-child(3) div,
+.timeline ul li:nth-child(7) div,
+.timeline ul li:nth-child(11) div {
   left: -370px;
 }
 
-.timeline ul li:nth-child(3) div::before,.timeline ul li:nth-child(7) div::before ,.timeline ul li:nth-child(11) div::before {
+.timeline ul li:nth-child(3) div::before,
+.timeline ul li:nth-child(7) div::before,
+.timeline ul li:nth-child(11) div::before {
   right: -15px;
   border-width: 8px 0 8px 16px;
   border-color: transparent transparent transparent #fff;
@@ -248,11 +272,16 @@ time {
   transition: all .5s ease-in-out;
 }
 
-.timeline ul li:nth-child(1) div,.timeline ul li:nth-child(5) div,.timeline ul li:nth-child(9) div,.timeline ul li:nth-child(13) div {
+.timeline ul li:nth-child(1) div,
+.timeline ul li:nth-child(5) div,
+.timeline ul li:nth-child(9) div,
+.timeline ul li:nth-child(13) div {
   transform: translate3d(300px, 0, 0);
 }
 
-.timeline ul li:nth-child(3) div,.timeline ul li:nth-child(7) div,.timeline ul li:nth-child(11) div {
+.timeline ul li:nth-child(3) div,
+.timeline ul li:nth-child(7) div,
+.timeline ul li:nth-child(11) div {
   transform: translate3d(-300px, 0, 0);
 }
 
@@ -289,14 +318,16 @@ time {
 	margin-left: 20px;
 }
 
-.about, .contact {
+.about,
+.contact {
 	width: 300px;
 	padding: 10px;
 	color: #333;
 	text-align: left;
 }
 
-.home6 h3, footer {
+.home6 h3, 
+footer {
 	color: #999;
 	font-family: 'Titillium Web', sans-serif;
 	font-size: 15px;
@@ -307,7 +338,8 @@ footer h5 {
 }
 
 @media all and (max-width: 800px) {
-  .nav, .nav1 {
+  .nav, 
+  .nav1 {
     justify-content: space-around;
   }
 }
@@ -317,18 +349,22 @@ footer h5 {
 		width: 200px;
 	}
 
-	.timeline ul li:nth-child(3) div,.timeline ul li:nth-child(7) div,.timeline ul li:nth-child(11) div {
+	.timeline ul li:nth-child(3) div,
+  .timeline ul li:nth-child(7) div,
+  .timeline ul li:nth-child(11) div {
 	  left: -270px;
 	}
 }
 
 @media all and (max-width: 600px) {
-  .nav, .nav1 {
+  .nav, 
+  .nav1 {
     flex-flow: column wrap;
     padding: 0;
   }
   
-  .nav a, .nav1 a { 
+  .nav a, 
+  .nav1 a { 
     text-align: center; 
     padding: 9px;
   }
@@ -362,11 +398,15 @@ footer h5 {
 	width: 200px;
   }
 
-  .timeline ul li:nth-child(3) div,.timeline ul li:nth-child(7) div,.timeline ul li:nth-child(11) div {
+  .timeline ul li:nth-child(3) div,
+  .timeline ul li:nth-child(7) div,
+  .timeline ul li:nth-child(11) div {
 	left: 45px;
   }
 
-  .timeline ul li:nth-child(3) div::before,.timeline ul li:nth-child(7) div::before ,.timeline ul li:nth-child(11) div::before {
+  .timeline ul li:nth-child(3) div::before,
+  .timeline ul li:nth-child(7) div::before,
+  .timeline ul li:nth-child(11) div::before {
   	left: -15px;
   	border-width: 8px 16px 8px 0;
   	border-color: transparent #fff transparent transparent;
